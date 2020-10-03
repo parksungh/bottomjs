@@ -1,0 +1,207 @@
+@import url(nanumsquare.css);
+
+body{
+	margin:0px;
+	font-family: 'Nanum Gothic,Noto Sans KR'; 
+	-webkit-font-smoothing:antialiased; 
+	-moz-font-smoothing:antialiased; 
+	font-smoothing:antialiased;
+}
+
+#activityContainer{
+	display:block;
+	width:1010px;
+	height:650px;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+.activityScene{
+	display:block;
+	width:1010px;
+	height:650px;
+	background: url(../img/quiz_yn/yn_Bg.png) no-repeat;
+}
+
+.qQuest {
+	background: url(../img/quiz_yn/qQuest.png) no-repeat;
+	width:54px;
+	height:53px;
+	position: absolute;
+	top:95px;
+	left:40px;
+}
+
+.JiMun {
+	width:800px;
+	position: absolute;
+	top:95px;
+	left:110px;
+	font-family: 'Nanum Square';
+	font-size:20px;
+	color:#3897e2;
+	font-weight:500;
+}
+
+.content {
+	width:950px;
+	position: absolute;
+	left:40px;
+	top:170px;
+}
+
+.num {
+	margin-bottom:7px;
+	border-bottom:1px solid #c5c5c5;
+}
+
+.num ul {
+	display:inline-block;
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+
+.num li {
+	font-family: 'Nanum Square';
+	font-weight:500;
+	color:#000;
+	font-size:20px;
+	float:left;
+}
+
+.num span {
+	background-color:#a4a4a4;
+	font-size:18px;
+	padding:3px 8px;
+	border-radius:15px;
+	color:#fff;
+	display:inline-block;
+	vertical-align:top;
+}
+
+.num p {
+	display:inline-block;
+	width:730px;
+	margin:0 20px 0 15px;
+	padding:3px 0 0 0;
+}
+
+.yesbtn{
+	border:0px;
+	width:72px;
+	height:30px;
+	cursor: pointer;
+	background-color:#3897e2;
+	color:#fff;
+	border-radius:15px;
+	font-family:'Nanum Square';
+	font-size:20px;
+	font-weight:500;
+}
+
+.yesbtn:hover{
+	background-color:#53acf2;
+}
+
+.nobtn{
+	border:0px;
+	width:72px;
+	height:30px;
+	cursor: pointer;
+	background-color:#7d7d7d;
+	color:#fff;
+	border-radius:15px;
+	font-family:'Nanum Square';
+	font-size:20px;
+	font-weight:500;
+	margin-left:10px;
+}
+
+.nobtn:hover{
+	background-color:#a8a8a8;
+}
+
+
+.Confirm {
+	width:194px;
+	height:44px;
+	cursor: pointer;
+	position: absolute;
+	bottom:115px;
+	left:40%;
+	background:url(../img/quiz_yn/insert_btn.png) no-repeat;
+}
+
+.Confirm:hover {
+	background:url(../img/quiz_yn/insert_btn_over.png) no-repeat;
+}
+
+.resPannel {
+	position: absolute;
+	bottom:50px;
+	left:30px;
+}
+
+.resPannel div {
+	float:left;
+}
+
+#scoreLine {
+	font-family:'Nanum Square';
+	font-size:22px;
+	color:#153756;
+	margin-top:10px;
+}
+
+#scoreLine span{
+	color:#3897e2;
+	font-weight:700;
+}
+
+/* 결과에 따라 btn 모양 다르게  1 : 상, 2: 중 , 3 : 하*/
+
+.playBtn1 {
+	width:157px;
+	height:47px;
+	margin-left:20px;
+	cursor: pointer;
+	background:url(../img/quiz_yn/playbtn1.png) no-repeat;
+}
+
+.playBtn1:hover {
+	background:url(../img/quiz_yn/playbtn1_over.png) no-repeat;
+}
+
+.playBtn2 {
+	width:157px;
+	height:47px;
+	margin-left:20px;
+	cursor: pointer;
+	background:url(../img/quiz_yn/playbtn2.png) no-repeat;
+}
+
+.playBtn2:hover {
+	background:url(../img/quiz_yn/playbtn2_over.png) no-repeat;
+}
+
+.playBtn3 {
+	width:157px;
+	height:47px;
+	margin-left:20px;
+	cursor: pointer;
+	background:url(../img/quiz_yn/playbtn3.png) no-repeat;
+}
+
+.playBtn3:hover {
+	background:url(../img/quiz_yn/playbtn3_over.png) no-repeat;
+}
+
+.ochoice{
+	background-color:#0a61a6;
+}
+
+.xchoice{
+	background-color:#3a3a3a;
+}

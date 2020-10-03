@@ -1,0 +1,139 @@
+
+/**		전체 틀 컨테이너		**/ 
+/*	#fs-container{width:1000px;height:650px;position:absolute;top:50%;margin-top:-300px;left:50%;margin-left:-450px;}*/
+	#fs-container{width:1010px;height:650px;position:absolute;}
+
+	.container_inner{width:1010px;height:650px;position:relative;overflow:hidden;} 
+
+/**      상단 헤더      **/
+/*
+	#fs-header{	width:100%;margin:auto;position:absolute;top:0;z-index:10;
+	background: url("./img/top/top_bg.png") 0 0 repeat-x;border-top:3px solid #DA7A06;box-sizing:border-box;height:64px;	}
+	.header_inner{}
+	.header_inner .header_left{	box-sizing:border-box;	z-index:10;color:#625E5D;}
+	.header_inner .header_left .top_title{height:45px;position:relative;box-shad ow:1px 1px solid #000}
+	.header_inner .header_left .top_title .chapter_num{font-size:10pt;height:45px;line-height:45px;color:#227EBD;font-weight:bolder;}
+	.header_inner .header_left .top_title .chapter_title{font-size:14pt;font-weight:500;line-height:47px;color:#625E5D;font-weight:bolder;padding-left:10px;}
+	.header_inner .header_left .sub_title {border-bottom:2px solid #4E4B4B;color:#4E4B4B;backg round:url("./img/top/sub_title_bg.png") 0 0 no-repeat;margin:11px 0 0 20px;background:transparent;display:inline-block;}
+	.header_inner .header_left .sub_title img{} //학습 단계
+	.header_inner .header_left .sub_title .page_infor{font-size:12pt;color:#333;padding-left:8px;font-weight:500}//**학습 단계 설명
+
+	.header_right{font-weight:500;text-shadow:3px 3px 2px #25595C;line-height:45px;font-size:15pt;position:absolute;	right:0px;top:0px;color:#fff;}//**오른쪽 차시명*
+*/
+	#fs-header{	width:100%;margin:auto;position:absolute;top:0;z-index:5;height:64px;	}
+	.sub_title{position:absolute; top:0px; left:0px;}
+	.top_title{position:absolute; top:3px; right:5px;}
+/**	index		**/
+ #fs-index{ width:220px; height:500px;	position:absolute;	left:-220px; bottom:43px; z-index:10; }
+ .index_open_btn{ width:52px; height:83px; position:absolute; left:208px;top:170px;  background-image:url("./img/index/index_btn_open_d.png"); background-repeat:no-repeat; cursor:pointer;  hidden; }
+ .index_open_btn:hover{ background-image:url("./img/index/index_btn_open_u.png");}
+
+ .index_inner{box-sizing:border-box;position:relative;width:220px;height:500px;background-image:url("./img/index/index_bg.png"); background-repeat:no-repeat; }
+ .index_hide_btn{ width:52px; height:83px; position:absolute; left:208px; top:170px;  background-image:url("./img/index/index_btn_hide_d.png"); background-repeat:no-repeat; cursor:pointer; hidden;}
+ .index_hide_btn:hover{	background-image:url("./img/index/index_btn_hide_u.png");}
+ 
+ .index_inner div{ position:relative; left:0; top:10px; width:200px; display:inline-block; box-sizing:border-box; vertical-align: top; }
+ .index_inner div.index_1{ position:relative; margin-bottom:0px; }
+ /*.index_inner div.index_1 li{list-style:square}*/
+ .index_inner div.index_2{ position:relative; margin-bottom:0px; }
+ /*.index_inner div.index_2 li{list-style:square}*/
+ .index_inner div.index_3{ position:relative;}
+ /*.index_inner div.index_3 li{list-style:square}*/
+ .index_inner div p{width:100%; margin-bottom:0px; font-size:13pt; color:#000;}
+/* .index_inner div p.intro{background-image:url("./img/index/index_intro_d.png")}*/
+/* .index_inner div p.intro:hover{background-image:url("./img/index/index_intro_u.png") }*/
+/* .index_inner div p.overview{background-image:url("./img/index/index_overview_d.png") }*/
+/* .index_inner div p.overview:hover{background-image:url("./img/index/index_overview_u.png") }*/
+/* .index_inner div p.lecture{background-image:url("./img/index/index_lecture_d.png") }*/
+/* .index_inner div p.lecture:hover{background-image:url("./img/index/index_lecture_u.png") ;}*/
+/* .index_inner div p.quiz{background-image:url("./img/index/index_quiz_d.png") ;}*/
+/* .index_inner div p.quiz:hover{background-image:url("./img/index/index_quiz_u.png") ;}*/
+/* .index_inner div p.outro{background-image:url("./img/index/index_outro_d.png");}*/
+/* .index_inner div p.outro:hover{background-image:url("./img/index/index_outro_u.png") ;}*/
+ .index_inner div p{ padding-left:15px; }
+ .index_inner div ul{ margin:5px 0 20px 0; }
+ .index_inner div ul li{ width: 170px; padding-left:30px; margin-bottom:5px; color:#888; line-height:20px; font-weight:500; font-size:16px; letter-spacing:-1px; font-family: 'Nanum Square'; }
+ .index_inner div ul li.line{ width:60px; }
+ .index_inner div ul li span { display:inline-block; }
+ .index_inner div ul li .dash{ vertical-align:top; width:10px; }
+ .index_inner div ul li .txt{ width:155px; }
+
+
+/**	내용 컨텐츠		**/
+	#fs-content{	width:1010px;height:650px;display:block;box-sizing:border-box;}
+	.content_inner{	width:100%;height:560px;z-index:4;position:relative;} 
+	#htmlShow{width:1010px;height:650px;display:block;box-sizing:border-box;}
+	#mediaObj{width:100%;height:650px; text-align:center;position:absolute;left:0;top:0px;background:#fff;}
+	#mediaObj video{width:100%;	background:#fff;}
+
+
+/** 날개 페이징 **/
+	#fs-content .big_arr_left{	width:55px;height:100px;	position:absolute;	left:-60px;top:50%;margin-top:-50px;	background:url("./img/big_arr_left.png") no-repeat;	display:block;	cursor:pointer;	z-index:9;display:none;}
+	#fs-content .big_arr_right{	width:55px;height:100px;	position:absolute;	right:-60px;top:50%;margin-top:-50px;	background:url("./img/big_arr_right.png") no-repeat;	display:block;	cursor:pointer;		z-index: 9;display:none;}
+
+/* 깜박이는 버튼 */
+	.blink{ animation-name: blink;
+					animation-delay: 0.5s;
+					animation-duration: 1s;
+					animation-iteration-count: infinite;
+					animation-direction: alternate;
+					animation-timing-function: ease-in-out;}
+	.blink:hover{animation-play-state: paused;}
+	@keyframes blink {
+		from {
+				opacity: 1;
+		}
+		to {
+				opacity:0.5;
+		}
+	}
+
+#quiz_title_1{
+	display: block;
+	background: url(../img/quiz/quiz_title_1.png) no-repeat;
+	width:93px;
+	height:29px;
+	position: absolute;
+	top:56px;
+	left:50px;
+}
+
+#quiz_title_2{
+	display: block;
+	background: url(../img/quiz/quiz_title_2.png) no-repeat;
+	width:38px;
+	height:24px;
+	position: absolute;
+	top:60px;
+	left:144px;
+}
+
+#sum_title_1{
+	display: block;
+	background: url(../img/summary/sum_title_1.png) no-repeat;
+	width:93px;
+	height:29px;
+	position: absolute;
+	top:56px;
+	left:50px;
+}
+
+#sum_title_2{
+	display: block;
+	background: url(../img/summary/sum_title_2.png) no-repeat;
+	width:84px;
+	height:24px;
+	position: absolute;
+	top:60px;
+	left:144px;
+}
+
+
+#btn_skip{
+	width: 130px;
+	height:45px;
+	position: absolute;
+	bottom:70px;
+	right:112px;
+	background: url() no-repeat;  cursor:pointer;}
+}

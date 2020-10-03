@@ -1,0 +1,179 @@
+
+/**		하단 컨트롤		**/
+/*#fs-footer .footer_inner .control .map + data + slide + sound + script + speed + picture */
+	#fs-footer{	width:1010px;height:35px;position:absolute;bottom:0px;}
+	.footer_inner{	width:1010px;height:35px;position:relative; background:url("./img/footer/control_bg.png") no-repeat; z-index:20; }
+	.footer_inner .control{	width:1000px;height:35px; box-sizing:border-box; }
+	.footer_inner p{position:absolute; width:35px; height:35px; cursor:pointer; }
+
+/** 로고 **/
+	/*.footer_inner p.logo{background:url("./img/footer/control_logo.png") 50% 50% no-repeat;left:35px; width:124px; cursor:default; }*/
+
+/** 로드맵 **/
+	.footer_inner .map{background:url("./img/footer/sajunBtn_d.png") 50% 50% no-repeat;left:77px; width:70px; }
+
+/** 학습도우미 **/
+	.footer_inner .help{background:url("./img/footer/help_d.png") 50% 50% no-repeat;left:152px; width:87px; }
+
+/** 인덱스 **/
+	.footer_inner .index{background:url("./img/footer/indexBtn_d.png") 50% 50% no-repeat;left:15px; width:57px; }
+
+/** 강의노트 note **/
+/*	.footer_inner .note{background:url("./img/footer/helpBtn_d.png") 50% 50% no-repeat;left:150px; width:111px; }*/
+
+/**  slide>.slide_inner + .time + #marker **/ 
+	/** 슬라이드 바 **/
+	.slide{	display:inline-block; position:absolute; left:0; top:-8px;}
+	.slide .slide_inner{ height:8px;z-index:15;position:relative;margin:auto; } 
+
+	.slide .slide_bg{width:1010px;height:8px; background:rgba(225,225,225,0.3);	position:absolute; left:0; margin-right:0;background:url("./img/footer/footer_slide_d.png") 50% 50% no-repeat}
+	/*.slide .slide_bg{width:260px; height:7px; background:#d3d3d3;	position:absolute; top:0px; margin-right:0;}*/
+	/*.slide .slide_current{	width:0px;	height:18px;	background:#33CCFF;	position:absolute; left:0; top:-2px;	z-index:11;background:url("./img/footer/footer_slide_u.png") 0 50% no-repeat}*/
+	.slide .slide_current{	width:0px; height:8px;	background:#FFAF1D; position:absolute; left:0; top:0; z-index:11; border-radius:0 5px 5px 0;}
+	/*.slide .slide_current:after{content:""; display:block; clear:both;width:28px; height:28px; background:url("./img/footer/footer_slide_heart.png"); position:absolute; right:-10px; top:-8px;}*/
+
+	.time{width:85px; display:inline-block; height:35px; position:absolute; left:465px; top:0px; }
+	.time ul{width:80px; height:35px;}
+	.time ul li{line-height:36px; color:#fff; font-size:9pt;float:left;}
+	.time ul li.time_cur {color:#fff;}
+
+	/** 마커 , 마커풍선 **/
+	#marker{	width:284px; height:26px;	position:absolute;	left:3px;top:-31px;z-index:50;	}
+	#marker ul{w idth:400px;position:relative}
+	#marker ul li{list-style:none;padding:10px 0; display:inline-block;text-align:left;height:22px;position:absolute;z-index:100;}
+	#marker ul li em{width:17px; height:10px;background:url("./img/marker.png") 0 0 no-repeat;display:block;position:absolute;bottom:-2px;left:0;cursor:pointer;z-index:10;}
+	#marker ul li span{float:left;display:inline-block;padding:5px 0 ;height:26px;line-height:20px;display:none;color:#333;margin-top:-10px}
+	#marker ul li span:nth-of-type(1){z-index:-10;position:absolute;left:-10px;top:0;background:url("./img/bal_1.png") 0 0 no-repeat;width:26px}
+	#marker ul li span:nth-of-type(2){margin-left:10px;background:url("./img/bal_2.png") 0px 0 repeat-x;text-indent:-10px;margin-top:-20px}
+	#marker ul li span:nth-of-type(3){float:right;background:url("./img/bal_3.png") 100% 0  no-repeat;width:8px;margin-top:-20px}
+
+/**  재생 play **/
+	.footer_inner .play{ width:22px;height:35px;background:url("./img/footer/footer_play_d.png") 50% 50% no-repeat;left:585px; display:none;}
+
+/**  일시 중지 pause **/
+	.footer_inner .pause{ width:22px;height:35px;background:url("./img/footer/footer_pause_d.png") 50% 50% no-repeat;left:585px;}
+
+/** 다시재생 replay **/
+	.footer_inner .replay{ width:22px;height:35px;background:url("./img/footer/footer_replay_d.png") 50% 50% no-repeat;left:645px;}
+
+/** 사운드 버튼 **/
+	.footer_inner .sound_btn{	width:22px;height:35px;	background-image:url("./img/footer/footer_sound_on_d.png");background-position: 50% 50%;background-repeat: no-repeat;left:705px; }
+	/*.footer_inner .sound{left:840px; width:40px; overflow:hidden; }
+	.footer_inner .sound .sound_bar_bg{	width:40px; height:35px; display:block; margin:auto; z-index:-100; }
+	.footer_inner .sound .sound_bar_bg .sound_bar{	width:0px;height:8px;display:block;	position:absolute;	left:10px;top:20px; background:#fff; }
+	.footer_inner .sound .sound_bar_bg .sound_bar_mask{	width:40px;height:33px;	background:url("./img/footer/footer_soundbar.png") no-repeat;	display:block;	position:absolute;	left:0px;bottom:0px;}*/
+
+/** 자막 **/
+	.footer_inner .script{width:22px;height:35px;background:url("./img/footer/footer_script_d.png") 50% 50% no-repeat;left:705px;}
+	
+/** 전체보기 **/
+	.footer_inner .full{width:35px;height:35px;background:url("./img/footer/footer_full_d.png") 50% 50% no-repeat;left:750px;}
+
+/**?**/
+	/*.footer_inner .q{width:35px;height:35px;background:url("./img/footer/q_d.png") 50% 50% no-repeat;left:800px;}*/
+
+/** 스크립트 버튼 **/
+	#fs-footer .scriptView{display:none; z-index:10; position:absolute; width:100%; height:110px; top:20px; padding-top:20px; padding-bottom:50px;	box-sizing:border-box; background:url("./img/footer/script_bg.png") 50% no-repeat;}
+	#fs-footer .scriptView .script_inner{width:810px;height:67px; margin: auto; margin-top:10px; padding-right:15px; overflow-y:auto;}
+
+/*		scrollbar-3d Light-Color: #4a413c; 	scrollbar-arrow-color:#4a413c ; 	scrollbar-base-color: gba(201,164,141,0.3); 	*/
+/*	scrollbar-Face-Color: #928e8c; 	scrollbar-Track-Color:#4a413c ;	scrollbar-DarkShadow-Color: bla ck; 	scrollbar-Highlight-Color:  #4a413c; 	scrollbar-Shadow-Color: 	#4a413c;	}*/
+/*	#fs-footer .scriptView .script_inner::-webkit-scrollbar {width: 10px; height: 14px; bord er: 3px solid #fff; }*/
+/*	#fs-footer .scriptView .script_inner::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {display: block; height: 10px; background: pink) #efefef}*/
+/*	#fs-footer .scriptView .script_inner::-webkit-scrollbar-track {background: #efefef; -webkit-border-radius: 10px; border-radius:10px; -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.2)}*/
+/*	#fs-footer .scriptView .script_inner::-webkit-scrollbar-thumb {height: 50px; width: 50px; background: rgba(0,0,0,.2); -webkit-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.1)}*/
+
+	#fs-footer .scriptView .script_close{width:90px;height:20px;position:absolute;left:50%;top:3px;margin-left:-45px;cursor:pointer;text-align:center;line-height:1.2;l tter-spacing:-1px;color:#fff}
+	#fs-footer .scriptView .script_close span{font-size:70%;display:inline-block;color:#fff;vertical-align:top;line-height:1.5;}
+	#fs-footer .scriptView .script_close:hover{color:#333}
+	#fs-footer .scriptView .script_close:hover span{color:#333}
+	#fs-footer .scriptView span{		color:#fff;		display:block;	word-break:keep-all;	padding-bottom:10px;}
+	#fs-footer .scriptView span strong{	font-size:16px;	width:100%;	display:block;}	
+
+/* ie 용 스크롤 바 색상변경 가능 크기 사이즈 변경 안됨*********************************************/
+html { scrollbar-arrow-color: #999;
+        scrollbar-Track-Color: #fff; 
+        scrollbar-base-color: pink;
+        scrollbar-Face-Color: #dcdcdc;
+        scrollbar-3dLight-Color: #dfdfdf;         
+        scrollbar-DarkShadow-Color: #dfdfdf;
+        scrollbar-Highlight-Color: #dfdfdf;
+        scrollbar-Shadow-Color: #dfdfdf}
+/* Chrome, Safari용 스크롤 바 */
+::-webkit-scrollbar {width: 10px; height: 15px;  }
+/*::-webkit-scrollbar-button:start:decrement {display: block; width: 12px;height: 12px;bord er-radius:50%; background: url("./img/quiz/scroll_top.png") 50% 50% no-repeat;rgba(0,0,0,0.1);} 
+::-webkit-scrollbar-button:end:increment {display: block; width: 12px;height: 12px;bor der-radius:50%; background: url("./img/quiz/scroll_bot.png") 50% 50%  no-repeat;rgba(0,0,0,0.1);} */
+::-webkit-scrollbar-track-piece{}
+::-webkit-scrollbar-track {bord er-radius:50%;border-left:3px solid #fff;border-right:3px solid #fff;  background: #efefef;box-sizing:border-box}
+::-webkit-scrollbar-thumb { bor der-radius:3px;border-left:2.5px solid #fff;border-right:2.5px solid #fff;  background: #8D9EAF;box-sizing:border-box }
+/* ------------------------------------------------------------ */
+
+
+/** 배속 선택 버튼  
+	.footer_inner .speed{display:inline-block;height:44px;cursor:default;left:730px; top:-3px; position:absolute; }
+	.footer_inner .speed ul{border-radius:5px;	width:77px;height:27px;border:1.5px solid #999;margin-top:8px;}
+	.footer_inner .speed ul li{float:left;color:#333}
+	.footer_inner .speed ul li:nth-child(1){width:20px;height:27px;font-size:10pt;	color:#999;	line-height:27px;background:url("./img/footer/footer_speed_left_d.png") 50% 50% no-repeat}
+	.footer_inner .speed ul li:nth-child(1):hover{background:url("./img/footer/footer_speed_left_u.png") 50% 50% no-repeat;cursor:pointer;}
+	.footer_inner .speed ul li:nth-child(2){width: 36px;	line-height:26px;text-align:center;font-weight:bolder;color:#666}
+	.footer_inner .speed ul li:nth-child(3){width:20px;height:27px;font-size:10pt;	color:#999;	line-height:27px;background:url("./img/footer/footer_speed_right_d.png") 50% 50% no-repeat}
+	.footer_inner .speed ul li:nth-child(3):hover{background:url("./img/footer/footer_speed_right_u.png") 50% 50% no-repeat;cursor:pointer;}
+**/
+
+/** 화질 선택 버튼 **/
+	.footer_inner .picture{	position:relative;	width:48px;height:20px;}
+	.footer_inner .picture ul{	width:48px;	background:rgba(0,0,0,0.8);	position:absolute;	bottom:30px;left:0;	border-radius:5px;	display:none;	z-index:10;}
+	.footer_inner .picture ul li{	width:48px;height:20px;	text-align:center;	font-size:10pt;	color:#999;	line-height:20px;	z-index:100;}
+	.footer_inner .picture ul li:hover{	color:#D29364;}
+	.footer_inner .picture span{	width:48px;height:20px;	position:absolute;	bottom:10px; left:0;	background:rgba(0,0,0,0.5);	border-radius:5px;	color:#999;	font-size:10pt;	display:block;	text-align:center;	line-height:19px;}
+	.footer_inner .picture span:hover{	color:#D29364;}
+
+/**  이전 다음 버튼**/
+	.footer_inner .paging{display:inline-block;	position:absolute; right:30px; height:35px; top:0px; }
+	.footer_inner .paging ul li{float:left;	height:35px; color:#A4A4A4; font-size:11pt;font-weight:900; }
+	.footer_inner .paging .dash{	width:15px;text-align:center;}
+
+	.footer_inner .paging .pre{width:26px;background:url("./img/footer/footer_paging_pre_d.png") 50% 50% no-repeat;	cursor:pointer; text-align:right; margin-right:20px;}
+	.footer_inner .paging .next{width:26px;background:url("./img/footer/footer_paging_nex_d.png") 50% 50% no-repeat; cursor:pointer; margin-left:20px;}
+
+	.footer_inner .paging .page_current{padding-right:3px;text-align:center; color:#FFAF1D; font-size:16px;font-weight:500; line-height:38px;}
+	.footer_inner .paging .page_total{ color:#fff;font-size:16px;line-height:38px;font-weight:500;}
+
+	.footer_inner .paging .preM{width:40px;background:url("./img/footer/footer_paging_preM_d.png") 50% 50% no-repeat;	cursor:pointer;}
+	.footer_inner .paging .nextM{width:40px;background:url("./img/footer/footer_paging_nexM_d.png") 50% 50% no-repeat;	cursor:pointer;}
+
+
+/** 다음페이지 이동 tooltip **/
+	#fs-footer .next_tooltip{width:150px;height:25px;	background:url("./img/footer/footer_next_tooltip1.png") 100% 50% no-repeat;	position:absolute;	top:-35px; right:19px; display:none; z-index:100;}  
+
+/** 익스 이외에 버전 버튼클릭 로딩 **/
+	#fs-footer .btn_clickCall {width:250px;height:41px;	background:url("./img/footer/chrome.png") 100% 50% no-repeat;	position:absolute;	top:-45px; right:230px;  z-index:100;}  
+
+/** 닫기 버튼 **/
+	.footer_inner .close_btn{width:23px;height:23px;	background-image:url("./img/footer/footer_close_d.png");background-position: 50% 50%;background-repeat: no-repeat;right:12px; top:10px}
+
+#htmlContents{
+	display:none;
+	width: 1010px;
+	height:650px;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	background-color: #FFF;
+}
+#mvEndContents{
+	display:none;
+	width: 1010px;
+	height:650px;
+	position: absolute;
+	top:0px;
+	left: 0px;
+}
+#loadActFrame{
+	width: 1010px;
+	height:650px;
+}
+#loadQuizFrame{
+	width: 1010px;
+	height:650px;
+}

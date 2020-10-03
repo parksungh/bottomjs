@@ -1,0 +1,112 @@
+/* CSS Document */
+@import url(notosanskr.css);
+@import url(nanumsquare.css);
+
+body{
+	margin:0px;
+}
+
+#summaryContainer{
+	width:1010px;
+	height:650px;
+	position: absolute;
+	top:0px;
+	left:0px;
+	overflow:hidden;
+}
+.sumScene{
+	display:block;
+	width:1010px;
+	height:650px;
+	position: relative;
+	background: url(../img/summary/bg_tj.png) no-repeat;
+}
+
+
+#conSubject{
+	display: block;
+	position: absolute;
+	top:30px;
+	top:35px;
+	left:50px;
+	color:#5e62b6;
+	font-size:20px;
+	background: url(../img/summary/jisi.png) no-repeat;
+	background-position: -0px 11px;
+	height: 30px;
+	width:100%;
+	padding:5px 0 0 20px;
+	letter-spacing: -1px;
+}
+
+
+.sumPannel{
+	display: block;
+	width:750px;
+	height:500px;
+	position: relative;
+	top:141px;
+	left:255px;
+}
+
+
+.prevBtn { position: absolute; bottom:104px; left:70px; width:33px; height:33px; cursor:pointer; }
+.nextBtn { position: absolute; bottom:104px; left:185px; width:33px; height:33px; cursor:pointer; }
+
+#prevBtn{background:url(../img/summary/prev.png) no-repeat; }
+#prevBtn:hover{background:url(../img/summary/prev_over.png) no-repeat; }
+#nextBtn{background:url(../img/summary/next.png) no-repeat; }
+#nextBtn:hover{background:url(../img/summary/next_over.png) no-repeat; }
+
+
+
+
+/*부가메뉴버튼*/
+#sumDownSet{
+	display: block;
+	position: absolute;
+	top:90px;
+	right:100px;
+}
+
+
+.sumBtn{
+	display: block;
+	width:57px;
+	height:63px;
+	float:left;
+	padding:0;
+	margin-left:1px;
+	border:0px;
+	cursor: pointer;
+	text-indent: -1010em;
+}
+
+
+#downBtn{ background: url(../img/summary/down.png) no-repeat; }
+#downBtn:hover{background: url(../img/summary/down_Over.png) no-repeat;}
+
+#printBtn{background: url(../img/summary/print.png) no-repeat; }
+#printBtn:hover{background: url(../img/summary/print_Over.png) no-repeat; }
+
+/*-----------------------------------------------------------------------------------*/
+
+.numSet{width:70px; height:25px; position:absolute; bottom:107px; left:110px; font-family:'Nanum Square'; font-weight:700; font-size:22px; }
+#curNum, #cutline, #toNum{float:left; width:30px; height:30px; text-align:center;}
+#cutline{font-size:20px; width:10px; color:#fff;}
+#curNum{color:#fff;}
+#toNum{color:#fff;}
+
+
+
+
+
+/*#sum_title_1{
+	display: block;
+	background: url(../img/summary/sum_title_1.png) no-repeat;
+	width:322px;
+	height:197px;
+	position: absolute;
+	top:69px;
+	left:0px;
+}*/

@@ -1,0 +1,59 @@
+/* CSS Document */
+@import url(notosanskr.css);
+@import url(nanumsquare.css);
+
+body{
+	margin:0px;
+}
+
+#summaryContainer{
+	width:1010px;
+	height:650px;
+	position: absolute;
+	top:0px;
+	left:0px;
+	overflow:hidden;
+}
+.sumScene{
+	display:block;
+	width:1010px;
+	height:650px;
+	position: relative;
+	background: url(../img/back/bg_tj.png) no-repeat;
+}
+
+
+#conSubject{
+	display: block;
+	position: absolute;
+	top:30px;
+	top:35px;
+	left:50px;
+	color:#5e62b6;
+	font-size:20px;
+	background: url(../img/back/jisi.png) no-repeat;
+	background-position: -0px 11px;
+	height: 30px;
+	width:100%;
+	padding:5px 0 0 20px;
+	letter-spacing: -1px;
+}
+
+
+.sumPannel{
+	display: block;
+	width:1010px;
+	height:650px;
+	position: relative;
+	top:0px;
+	left:0px;
+}
+
+
+.prevBtn { position: absolute; bottom:230px; left:10px; width:33px; height:33px; cursor:pointer; }
+.nextBtn { position: absolute; bottom:230px; right:10px; width:33px; height:33px; cursor:pointer; }
+
+#prevBtn{background:url(../img/back2/prev.png) no-repeat; }
+#prevBtn:hover{background:url(../img/back2/prev_over.png) no-repeat; }
+#nextBtn{background:url(../img/back2/next.png) no-repeat; }
+#nextBtn:hover{background:url(../img/back2/next_over.png) no-repeat; }
