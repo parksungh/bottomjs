@@ -1,0 +1,29 @@
+/* CSS Document */
+
+@font-face {
+  font-family: 'KoPub Dotum';
+  font-style: normal;
+  font-weight: 300;
+  src: url(font/KoPubDotum-Light.eot);
+  src: url(font/KoPubDotum-Light.eot?#iefix) format('embedded-opentype'),
+       url(font/KoPubDotum-Light.woff) format('woff'),
+       url(font/KoPubDotum-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'KoPub Dotum';
+  font-style: normal;
+  font-weight: 400;
+  src: url(font/KoPubDotum-Bold.eot);
+  src: url(font/KoPubDotum-Bold.eot?#iefix) format('embedded-opentype'),
+       url(font/KoPubDotum-Bold.woff) format('woff'),
+       url(font/KoPubDotum-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'KoPub Dotum';
+  font-style: normal;
+  font-weight: 700;
+  src: url(font/KoPubDotum-Bold.eot);
+  src: url(font/KoPubDotum-Bold.eot?#iefix) format('embedded-opentype'),
+       url(font/KoPubDotum-Bold.woff) format('woff'),
+       url(font/KoPubDotum-Bold.ttf) format('truetype');
+}

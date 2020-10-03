@@ -1,0 +1,84 @@
+/* CSS Document */
+@import url(nanumgothic.css);
+@import url(nanummyeongjo.css);
+@import url(notosanskr.css);
+@import url(kopubdotum.css);
+
+body{
+	margin:0px;
+	font-family: 'Nanum Gothic,Noto Sans KR'; 
+	-webkit-font-smoothing:antialiased; 
+	-moz-font-smoothing:antialiased; 
+	font-smoothing:antialiased;
+}
+
+#start_btn{
+	display:block;
+	position: absolute;
+	bottom:44px;
+	left:480px;
+	background: url(../img/quiz/tj_start.png) no-repeat;
+	text-indent: -1000em;
+	cursor: pointer;
+	border:0px;
+	width: 176px;
+	height:159px;
+}
+#start_btn.act{
+	 -webkit-transition-duration: 0.3s; /* Safari */
+     transition-duration: 0.3s;
+}
+
+#start_btn:hover{
+	background: url(../img/quiz/tj_start_over.png) no-repeat;
+}
+
+#quizContainer{
+	display:block;
+	width:1000px;
+	height:562px;
+	background-color: #FFF;
+	position: absolute;
+	top:0px;
+}
+
+.quizInitScene{
+	display:block;
+	width:1010px;
+	height:650px;;
+	background: url(../img/quiz/quizintro_tj.png) no-repeat;
+	border:0px;
+	position: absolute;
+	top:0px;
+}
+
+
+#scene_1_1{
+	display: block;
+	background: url(../img/quiz/quizbg_tj.png) no-repeat;
+	width:1010px;
+	height:650px;
+	position: absolute;
+	top:20px; left:0px;
+}
+
+#scene_1_3{
+	display: block;
+	background: url(../img/quiz/tj_intro01.png) no-repeat;
+	width:307px;
+	height:75px;
+	position: absolute;
+	top:250px;
+	left:230px;
+}
+
+#scene_1_4{
+	display: block;
+	background: url(../img/quiz/tj_intro02.png) no-repeat;
+	width:302px;
+	height:57px;
+	position: absolute;
+	bottom:230px;
+	left:230px;
+}
+
