@@ -20,24 +20,28 @@ var enableScript = true;
 var pictFlag = false;
 
 
-//var ck_pg = parseInt(parent.ck_pg, 10);
+var ck_pg = parent.document.frmListen.log_num.value;
 
+//var ck_pg = "5,4,3,2,1,6";
 
-//var progressControll = true;	//true : 제어 가능
-//var progressControll = false;   //false : 제어 불가능
+if (ck_pg == NaN || ck_pg == undefined || !ck_pg) {
+	ck_pg = 1;
+} else {
+	var explode_value = ck_pg.split(',');
+	ck_pg = Math.max.apply(null, explode_value);
+}
+
+console.log('현재 진도 나간 페이지 ck_pg >>> ' + ck_pg);
+
+//var progressControll = 0;	//true : 제어 가능
+//var progressControll = 1;   //false : 제어 불가능
 
 if(isLocal){
 	var progressControll = 1;
 } else {
-//	if (parent.parent.controlYnFn() == true) {
-//		var progressControll =  0;
-//	} else {
-//		var progressControll =  1;
-//	}
-	var progressControll =  1;
+	var progressControll =  0;
 }
 
-//var progressControll =  0;
 
 function setBottom(){
 
@@ -925,6 +929,11 @@ function seekTimeUpdate() {
 /** 다음페이지 이동 툴팁 **/
 function setBalloon(){
 
+	 ck_pg=parseInt(ck_pg,10)
+	if(ck_pg==parseInt(curPage,10)){
+   		ck_pg++;
+	}
+
 	if(curPage == curTol){
 		$('.next_tooltip').css({"background":"url('../common/css/img//footer/footer_last_tooltip1.png') 100% 50% no-repeat"});			
 	}else{
@@ -1036,10 +1045,11 @@ function getInternetExplorerVersion2() {
 		}
 	}
 	 return rv; 
-} 
+}
+
 var isIEVersion2 =getInternetExplorerVersion2();
 var isExp2;
-if(isIEVersion2==-1 && curPage==1){
+if(isIEVersion2==-1){
 	isExp2=false;
 }else{
 	isExp2=true;
